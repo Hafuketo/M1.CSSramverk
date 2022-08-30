@@ -11,9 +11,13 @@
 	</head>
 	<body>
 		<header>
-			<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+			<nav
+				class="navbar navbar-expand-lg text-bg-dark navbar-dark py-3 fixed-top"
+			>
 				<div class="container">
-					<a href="./index.html">DT193G M1 - Bootstrap</a>
+					<a href="./index.html" class="navbar-brand"
+						>DT193G M1 - CSS-ramverk</a
+					>
 
 					<button
 						class="navbar-toggler"
@@ -45,17 +49,27 @@
 		</header>
 
 		<main class="">
-			<h1>Ramverk 1: Bootstrap</h1>
+			<h1 class="display-1 bg-warning text-light p-5 text-center">
+				Ramverk 1: Bootstrap
+			</h1>
 
 			<section id="info-section" class="p-5">
 				<h2>Information</h2>
-				<p>info</p>
+				<p>
+					Bootstrap är ett gratis CSS-ramverk skrivet i öppen källkod. Det
+					försöker vara responsivt, mobil-first och riktar sig till
+					frontend-utvekling. Den innehåller HTML, CSS och (valfritt)
+					JavaScript-baserade designmallar för typografi, formulär, knappar,
+					navigering och andra gränssnittskomponenter. <br /><br />
+					Från och med juli 2022 är Bootstrap det åttonde mest stjärnmärkta
+					projektet på GitHub, med över 158 000 stjärnor.
+				</p>
 				<a href="https://getbootstrap.com/" target="_blank"
 					>Ramverkets webbplats</a
 				>
 			</section>
 
-			<section id="procon-section" class="bg-dark text-light p-5">
+			<section id="procon-section" class="text-bg-dark p-5">
 				<h2>Bra och mindre bra</h2>
 				<p>
 					"Beskriv vad du tycker är bra med ramverket, och om det finns några
@@ -67,86 +81,194 @@
 				<h2>Tabell</h2>
 				<p>"Tabell med minst fyra fält, och minst fem rader med data."</p>
 				<table class="table">
-					<thead class="thead-dark">
+					<thead class="table-info">
 						<tr>
 							<th>#</th>
-							<th>Input</th>
-							<th>Textarea</th>
-							<th>Checkbox</th>
-							<th>Select</th>
+							<th>Namn</th>
+							<th>Favoritmat</th>
+							<th>Info</th>
+							<th>Kastrerad</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<th scope="row">1</th>
-							<td>Mark</td>
-							<td>Otto</td>
-							<td>Otto</td>
-							<td>Otto</td>
+							<td>Morris</td>
+							<td>Torrfoder</td>
+							<td>
+								Hoppar alltid upp på biltaket när man stannar vid brevlådan en
+								bit från huset
+							</td>
+							<td>Ja</td>
 						</tr>
 						<tr>
 							<th scope="row">2</th>
-							<td>Jacob</td>
-							<td>Thornton</td>
-							<td>Otto</td>
-							<td>Otto</td>
+							<td>Oscar</td>
+							<td>Ost</td>
+							<td>Har fått namnet från Kattpojken i pyjamashjältarna</td>
+							<td>Nej</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td>Boromir</td>
+							<td>Annat</td>
+							<td>
+								Springer alltid in i sovrummet och ockuperar sängen så fort han
+								får chansen
+							</td>
+							<td>Ja</td>
+						</tr>
+						<tr>
+							<th scope="row">4</th>
+							<td>Bob</td>
+							<td>Levande byte</td>
+							<td>
+								Brukar hoppa upp och klösa på rutan när han vill in istället för
+								att jama vid dörren
+							</td>
+							<td>Ja</td>
+						</tr>
+						<tr>
+							<th scope="row">5</th>
+							<td>Monstret</td>
+							<td>Fisk</td>
+							<td>
+								Hade ursprungligen namnet "Garden of Truth" eller något i den
+								stilen som ingen kunde komma ihåg eller uttala. Men hon såg ut
+								som ett monster så alla kallar henne "Monstret" eller
+								"Monsterkatten"
+							</td>
+							<td>Nej</td>
+						</tr>
+						<tr>
+							<th scope="row">6</th>
+							<td>Bulten</td>
+							<td>Korv</td>
+							<td>Är så stor och tjock att rävarna har ingen chans.</td>
+							<td>Ja</td>
 						</tr>
 					</tbody>
 				</table>
 			</section>
 
-			<section id="form-section" class="p-5">
-				<h2>Kattformulär</h2>
-				<p>Här kan du lägga till en katt i listan</p>
-				<form>
-					<div class="mb-3">
-						<label for="formGroupExampleInput" class="form-label">Namn: </label>
-						<input
-							type="text"
-							class="form-control"
-							id="formGroupExampleInput"
-							placeholder="Example input"
-							aria-describedby="emailHelp"
-						/>
-					</div>
-
-					<div class="mb-3">
-						<label for="selecttest" class="form-label">Favorite food</label>
-						<select
-							class="form-select"
-							aria-label="Default select example"
-							id="selecttest"
-						>
-							<option selected>Välj favoritmat</option>
-							<option value="1">Fisk</option>
-							<option value="2">Levandy byte</option>
-							<option value="3">Torrfoder</option>
-							<option value="4">Annat</option>
-						</select>
-					</div>
-
-					<div class="mb-3">
-						<label for="textarea1" class="form-label"
-							>Berätta lite mer om katten:
-						</label>
-						<textarea class="form-control" id="textarea1" rows="3"></textarea>
-					</div>
-
-					<div class="mb-3 form-check">
-						<input
-							class="form-check-input"
-							type="checkbox"
-							value=""
-							id="flexCheckDefault"
-						/>
-						<label class="form-check-label" for="flexCheckDefault">
-							Kastrerad
-						</label>
-					</div>
-
-					<button type="button" class="btn btn-primary">Primary</button>
-				</form>
+			<section id="modal-section" class="p-5 text-bg-info text-center">
+				<h2>Lägg till katt</h2>
+				<p>
+					Nu tillåter vi även dig att lägga till en egen katt i listan.
+					<br />
+					Tryck på knappen nedan för att öppna formuläret.
+				</p>
+				<button
+					class="btn btn-primary btn-lg"
+					data-bs-toggle="modal"
+					data-bs-target="#modalform"
+				>
+					Öppna formulär
+				</button>
 			</section>
+
+			<footer class="p-5 text-bg-dark text-center">
+				<div class="container"></div>
+				<p class="lead">Copyright 2022 Fredrik Sandström</p>
+				<p class="lead">
+					Denna sida är del av en uppgift för programmet
+					<a href="https://webbutveckling.miun.se/" target="_blank"
+						>Webbutveckling</a
+					>
+					på Mittuniversitetet
+				</p>
+
+				<img src="" alt="" />
+			</footer>
+
+			<div class="modal" tabindex="-1" id="modalform">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Kattformulär</h5>
+							<button
+								type="button"
+								class="btn-close"
+								data-bs-dismiss="modal"
+								aria-label="Stäng formulär"
+							></button>
+						</div>
+						<div class="modal-body">
+							<p>Här kan du lägga till en katt i listan</p>
+							<form>
+								<div class="mb-3">
+									<label for="formGroupExampleInput" class="form-label"
+										>Namn:
+									</label>
+									<input
+										type="text"
+										class="form-control"
+										id="formGroupExampleInput"
+										placeholder="Kattens namn"
+										aria-describedby="emailHelp"
+									/>
+								</div>
+
+								<div class="mb-3">
+									<label for="selecttest" class="form-label">Favoritmat</label>
+									<select
+										class="form-select"
+										aria-label="Default select example"
+										id="selecttest"
+									>
+										<option selected>Välj kattens favoritmat</option>
+										<option value="1">Fisk</option>
+										<option value="2">Levande byte</option>
+										<option value="3">Torrfoder</option>
+										<option value="4">Ost</option>
+										<option value="5">Korv</option>
+										<option value="6">Flugor</option>
+										<option value="7">Annat</option>
+									</select>
+								</div>
+
+								<div class="mb-3">
+									<label for="textarea1" class="form-label"
+										>Berätta lite mer om katten:
+									</label>
+									<textarea
+										class="form-control"
+										id="textarea1"
+										rows="3"
+										placeholder="Kanske något katten gjort som är roligt"
+									></textarea>
+								</div>
+
+								<div class="mb-3 form-check">
+									<input
+										class="form-check-input"
+										type="checkbox"
+										value=""
+										id="flexCheckDefault"
+									/>
+									<label class="form-check-label" for="flexCheckDefault">
+										Kastrerad
+									</label>
+								</div>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button
+								type="button"
+								class="btn btn-secondary"
+								data-bs-dismiss="modal"
+							>
+								avbryt
+							</button>
+							<button type="button" class="btn btn-primary">
+								Lägg till katt
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
+
+		<script src="./js/bootstrap.min.js"></script>
 	</body>
 </html>

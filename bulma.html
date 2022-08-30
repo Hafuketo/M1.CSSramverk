@@ -4,41 +4,63 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>DT193G M1 - Bootstrap</title>
+		<title>DT193G M1 - Bulma</title>
 	</head>
 	<body>
 		<header>
-			<p>DT193G M1 - Bootstrap</p>
-			<ul>
-				<li><a href="./index.html">Hem</a></li>
-				<li><a href="./bootstrap.html">Bootstrap</a></li>
-				<li><a href="./bulma.html">Bulma</a></li>
-				<li><a href="./publicering.html">Publicering</a></li>
-			</ul>
+			<nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+				<div class="container">
+					<a href="./index.html">DT193G M1 - CSS-ramverk</a>
+
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navmenu"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="#navmenu">
+						<ul class="navbar-nav ms-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="./index.html">Hem</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./bootstrap.html">Bootstrap</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./bulma.html">Bulma</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./publicering.html">Publicering</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
 		</header>
 
-		<main>
-			<h1>Ramverk 2: Bulma</h1>
+		<main class="">
+			<h1 class="display-1 bg-primary text-light p-5">Ramverk 1: Bootstrap</h1>
 
-			<section id="intro-section">
-				<h2>Intro</h2>
-				<ul>
-					<li>Tabell</li>
-					<li>Formulär</li>
-					<li>Knappar</li>
-				</ul>
-				<p>bla bla</p>
-			</section>
-
-			<section id="info-section">
+			<section id="info-section" class="p-5">
 				<h2>Information</h2>
-				<p>info</p>
+				<p>
+					Bootstrap är ett gratis CSS-ramverk skrivet i öppen källkod. Det
+					försöker vara responsivt, mobil-first och riktar sig till
+					frontend-utvekling. Den innehåller HTML, CSS och (valfritt)
+					JavaScript-baserade designmallar för typografi, formulär, knappar,
+					navigering och andra gränssnittskomponenter. <br /><br />
+					Från och med juli 2022 är Bootstrap det åttonde mest stjärnmärkta
+					projektet på GitHub, med över 158 000 stjärnor.
+				</p>
 				<a href="https://getbootstrap.com/" target="_blank"
 					>Ramverkets webbplats</a
 				>
 			</section>
 
-			<section id="procon-section">
+			<section id="procon-section" class="text-bg-dark p-5">
 				<h2>Bra och mindre bra</h2>
 				<p>
 					"Beskriv vad du tycker är bra med ramverket, och om det finns några
@@ -46,16 +68,97 @@
 				</p>
 			</section>
 
-			<section id="table-section">
+			<section id="table-section" class="p-5">
 				<h2>Tabell</h2>
 				<p>"Tabell med minst fyra fält, och minst fem rader med data."</p>
-				<table></table>
+				<table class="table">
+					<thead class="table-info">
+						<tr>
+							<th>#</th>
+							<th>Input</th>
+							<th>Textarea</th>
+							<th>Checkbox</th>
+							<th>Select</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>Otto</td>
+							<td>Otto</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>Otto</td>
+							<td>Otto</td>
+						</tr>
+					</tbody>
+				</table>
 			</section>
 
-			<section id="form-section">
-				<h2>formulär</h2>
-				<p>"Formulär för att lägga till data."</p>
-				<form action=""></form>
+			<section id="form-section" class="p-5 text-bg-info">
+				<h2>Kattformulär</h2>
+				<p>Här kan du lägga till en katt i listan</p>
+				<form>
+					<div class="mb-3">
+						<label for="formGroupExampleInput" class="form-label">Namn: </label>
+						<input
+							type="text"
+							class="form-control"
+							id="formGroupExampleInput"
+							placeholder="Kattens namn"
+							aria-describedby="emailHelp"
+						/>
+					</div>
+
+					<div class="mb-3">
+						<label for="selecttest" class="form-label">Favoritmat</label>
+						<select
+							class="form-select"
+							aria-label="Default select example"
+							id="selecttest"
+						>
+							<option selected>Välj kattens favoritmat</option>
+							<option value="1">Fisk</option>
+							<option value="2">Levandy byte</option>
+							<option value="3">Torrfoder</option>
+							<option value="4">Ost</option>
+							<option value="5">Korv</option>
+							<option value="6">Flugor</option>
+							<option value="7">Annat</option>
+						</select>
+					</div>
+
+					<div class="mb-3">
+						<label for="textarea1" class="form-label"
+							>Berätta lite mer om katten:
+						</label>
+						<textarea
+							class="form-control"
+							id="textarea1"
+							rows="3"
+							placeholder="Kanske något katten gjort som är roligt"
+						></textarea>
+					</div>
+
+					<div class="mb-3 form-check">
+						<input
+							class="form-check-input"
+							type="checkbox"
+							value=""
+							id="flexCheckDefault"
+						/>
+						<label class="form-check-label" for="flexCheckDefault">
+							Kastrerad
+						</label>
+					</div>
+
+					<button type="button" class="btn btn-dark">Lägg till</button>
+				</form>
 			</section>
 		</main>
 	</body>
