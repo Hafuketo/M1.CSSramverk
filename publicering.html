@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="sv">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>DT193G M1 - Publicering</title>
+	</head>
+	<body>
+		<header>
+			<p>DT193G M1 - CSS-ramverk</p>
+			<ul>
+				<li><a href="./index.html">Hem</a></li>
+				<li><a href="./bootstrap.html">Bootstrap</a></li>
+				<li><a href="./bulma.html">Bulma</a></li>
+				<li><a href="./publicering.html">Publicering</a></li>
+			</ul>
+		</header>
+
+		<main>
+			<h1>Publicering</h1>
+
+			<section id="pubintro-section">
+				<p>För att publicera dessa sidor användes följande teknik;</p>
+				<ul>
+					<li>Visual Studio Code</li>
+					<li>GitHub</li>
+					<li>Netlify</li>
+				</ul>
+			</section>
+
+			<section id="codesupport-section">
+				<h2>Kodstöd</h2>
+				<p>
+					VScode och GitHub stödjer kod för samtliga språk, är gratis och
+					marknadsstandard. Flaskhalsen landar i Netlify. <br />
+					Netlify stödjer till exempel inte PHP.
+				</p>
+			</section>
+			<section>
+				<h2>Kostnad</h2>
+				<p>Gratisvarianter användes för samtliga tekniker.</p>
+			</section>
+
+			<section id="proncon-section">
+				<h2>Fördelar</h2>
+				<ul>
+					<li>
+						Den största fördelen med att använda Netlify istället för att
+						använda en egen host är att det är gratis.
+					</li>
+					<li>
+						Om en har ett GitHub-konto och kan länka sidorna går det jättesnabbt
+						att uppdatera sidan så snart en aktiverat den.
+					</li>
+				</ul>
+
+				<h2>Nackdelar</h2>
+				<ul>
+					<li>
+						Netlify stödjer inte PHP, TypeScript, SASS med mera. Därför måste
+						koden konverteras innan den kan användas.
+					</li>
+					<li>
+						Om en använder t ex Gulp och endast sparar dev-koden i GitHub så
+						blir det krångligt att läsa in den färdiga koden vilket leder till
+						att en måste uppdatera på netlify manuellt.
+					</li>
+				</ul>
+			</section>
+
+			<section id="pubhowto-section">
+				<h2>Hur publiceringen gick till väga</h2>
+				<h3>Visual Studio Code</h3>
+				<p>
+					Kod skrevs i programmet
+					<a href="https://code.visualstudio.com/" target="_blank"
+						>Visual Studio Code</a
+					>
+				</p>
+
+				<h3>GitHub</h3>
+				<p>
+					Push gjordes mot
+					<a href="https://github.com/" target="_blank">GitHub</a>, vilket gör
+					att sidan finns tillgänglig
+					<a href="https://github.com/Hafuketo/M1.CSSramverk" target="_blank"
+						>här</a
+					>.
+				</p>
+
+				<h3>Netlify</h3>
+				<p>
+					Sedan användes sidan
+					<a href="https://www.netlify.com/" target="_blank">Netlify.com</a>.
+					Där skapades ett Netlifykonto genom att länka ett GitHub-konto. På så
+					vis kunde samtliga repositories kommas åt lätt, samt det gör att när
+					sidan senare publicerades så uppdateras den automatiskt varje gång en
+					push görs mot GitHub.
+				</p>
+			</section>
+		</main>
+	</body>
+</html>
