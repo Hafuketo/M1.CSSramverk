@@ -5,161 +5,191 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>DT193G M1 - Bulma</title>
+
+		<link rel="stylesheet" href="./css/bulma.min.css" />
+		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
 		<header>
-			<nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
-				<div class="container">
-					<a href="./index.html">DT193G M1 - CSS-ramverk</a>
-
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navmenu"
+			<nav
+				class="navbar has-background-dark has-text-light"
+				role="navigation"
+				aria-label="main navigation"
+			>
+				<div class="navbar-brand">
+					<a class="navbar-item" href="./index.html">DT193G M1 - CSS-ramverk</a>
+					<a
+						role="button"
+						class="navbar-burger"
+						aria-label="menu"
+						aria-expanded="false"
+						data-target="navbarBasicExample"
 					>
-						<span class="navbar-toggler-icon"></span>
-					</button>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+					</a>
+				</div>
 
-					<div class="collapse navbar-collapse" id="#navmenu">
-						<ul class="navbar-nav ms-auto">
-							<li class="nav-item">
-								<a class="nav-link" href="./index.html">Hem</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="./bootstrap.html">Bootstrap</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="./bulma.html">Bulma</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="./publicering.html">Publicering</a>
-							</li>
-						</ul>
+				<div id="navbarBasicExample" class="navbar-menu">
+					<div class="navbar-end">
+						<a class="navbar-item" href="./index.html">Hem</a>
+
+						<a class="navbar-item" href="./publicering.html"> Publicering </a>
+
+						<div class="navbar-item has-dropdown is-hoverable">
+							<a class="navbar-link"> Ramverk </a>
+
+							<div class="navbar-dropdown">
+								<a class="navbar-item" href="./bootstrap.html"> Bootstrap </a>
+								<a class="navbar-item" href="./bulma.html"> Bulma </a>
+								<hr class="navbar-divider" />
+							</div>
+						</div>
 					</div>
 				</div>
 			</nav>
 		</header>
 
 		<main class="">
-			<h1 class="display-1 bg-primary text-light p-5">Ramverk 1: Bootstrap</h1>
+			<h1
+				class="is-size-1 has-text-weight-bold has-text-centered has-background-warning"
+			>
+				Ramverk 1: Bootstrap
+			</h1>
 
-			<section id="info-section" class="p-5">
-				<h2>Information</h2>
-				<p>
-					Bootstrap är ett gratis CSS-ramverk skrivet i öppen källkod. Det
-					försöker vara responsivt, mobil-first och riktar sig till
-					frontend-utvekling. Den innehåller HTML, CSS och (valfritt)
-					JavaScript-baserade designmallar för typografi, formulär, knappar,
-					navigering och andra gränssnittskomponenter. <br /><br />
-					Från och med juli 2022 är Bootstrap det åttonde mest stjärnmärkta
-					projektet på GitHub, med över 158 000 stjärnor.
-				</p>
-				<a href="https://getbootstrap.com/" target="_blank"
-					>Ramverkets webbplats</a
-				>
+			<section id="info-section" class="section">
+				<div class="container">
+					<h2 class="is-size-2">Information</h2>
+					<p>
+						Bootstrap är ett gratis CSS-ramverk skrivet i öppen källkod. Det
+						försöker vara responsivt, mobil-first och riktar sig till
+						frontend-utvekling. Den innehåller HTML, CSS och (valfritt)
+						JavaScript-baserade designmallar för typografi, formulär, knappar,
+						navigering och andra gränssnittskomponenter. <br /><br />
+						Från och med juli 2022 är Bootstrap det åttonde mest stjärnmärkta
+						projektet på GitHub, med över 158 000 stjärnor.
+					</p>
+					<a
+						class="is-text-underlined"
+						href="https://getbootstrap.com/"
+						target="_blank"
+						>Ramverkets webbplats</a
+					>
+				</div>
 			</section>
 
-			<section id="procon-section" class="text-bg-dark p-5">
-				<h2>Bra och mindre bra</h2>
-				<p>
-					"Beskriv vad du tycker är bra med ramverket, och om det finns några
-					saker du tycker är mindre bra. "
-				</p>
+			<section id="procon-section" class="text-bg-dark section">
+				<div class="container">
+					<h2 class="is-size-1">Bra och mindre bra</h2>
+					<p>
+						"Beskriv vad du tycker är bra med ramverket, och om det finns några
+						saker du tycker är mindre bra. "
+					</p>
+				</div>
 			</section>
 
-			<section id="table-section" class="p-5">
-				<h2>Tabell</h2>
-				<p>"Tabell med minst fyra fält, och minst fem rader med data."</p>
-				<table class="table">
-					<thead class="table-info">
-						<tr>
-							<th>#</th>
-							<th>Input</th>
-							<th>Textarea</th>
-							<th>Checkbox</th>
-							<th>Select</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th scope="row">1</th>
-							<td>Mark</td>
-							<td>Otto</td>
-							<td>Otto</td>
-							<td>Otto</td>
-						</tr>
-						<tr>
-							<th scope="row">2</th>
-							<td>Jacob</td>
-							<td>Thornton</td>
-							<td>Otto</td>
-							<td>Otto</td>
-						</tr>
-					</tbody>
-				</table>
+			<section id="table-section" class="section">
+				<div class="container">
+					<h2 class="is-size-1">Tabell</h2>
+					<p>"Tabell med minst fyra fält, och minst fem rader med data."</p>
+					<table class="table">
+						<thead class="table-info">
+							<tr>
+								<th>#</th>
+								<th>Input</th>
+								<th>Textarea</th>
+								<th>Checkbox</th>
+								<th>Select</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th scope="row">1</th>
+								<td>Mark</td>
+								<td>Otto</td>
+								<td>Otto</td>
+								<td>Otto</td>
+							</tr>
+							<tr>
+								<th scope="row">2</th>
+								<td>Jacob</td>
+								<td>Thornton</td>
+								<td>Otto</td>
+								<td>Otto</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</section>
 
-			<section id="form-section" class="p-5 text-bg-info">
-				<h2>Kattformulär</h2>
-				<p>Här kan du lägga till en katt i listan</p>
-				<form>
-					<div class="mb-3">
-						<label for="formGroupExampleInput" class="form-label">Namn: </label>
-						<input
-							type="text"
-							class="form-control"
-							id="formGroupExampleInput"
-							placeholder="Kattens namn"
-							aria-describedby="emailHelp"
-						/>
-					</div>
+			<section id="form-section" class="has-background-info section">
+				<div class="container">
+					<h2 class="is-size-1">Kattformulär</h2>
+					<p>Här kan du lägga till en katt i listan</p>
+					<form class="">
+						<div class="">
+							<label for="formGroupExampleInput" class="">Namn: </label>
+							<input
+								type="text"
+								class=""
+								id="formGroupExampleInput"
+								placeholder="Kattens namn"
+								aria-describedby="emailHelp"
+							/>
+						</div>
 
-					<div class="mb-3">
-						<label for="selecttest" class="form-label">Favoritmat</label>
-						<select
-							class="form-select"
-							aria-label="Default select example"
-							id="selecttest"
-						>
-							<option selected>Välj kattens favoritmat</option>
-							<option value="1">Fisk</option>
-							<option value="2">Levandy byte</option>
-							<option value="3">Torrfoder</option>
-							<option value="4">Ost</option>
-							<option value="5">Korv</option>
-							<option value="6">Flugor</option>
-							<option value="7">Annat</option>
-						</select>
-					</div>
+						<div class="">
+							<label for="selecttest" class="">Favoritmat</label>
+							<select
+								class=""
+								aria-label="Default select example"
+								id="selecttest"
+							>
+								<option selected>Välj kattens favoritmat</option>
+								<option value="1">Fisk</option>
+								<option value="2">Levande byte</option>
+								<option value="3">Torrfoder</option>
+								<option value="4">Ost</option>
+								<option value="5">Korv</option>
+								<option value="6">Flugor</option>
+								<option value="7">Annat</option>
+							</select>
+						</div>
 
-					<div class="mb-3">
-						<label for="textarea1" class="form-label"
-							>Berätta lite mer om katten:
-						</label>
-						<textarea
-							class="form-control"
-							id="textarea1"
-							rows="3"
-							placeholder="Kanske något katten gjort som är roligt"
-						></textarea>
-					</div>
+						<div class="">
+							<label for="textarea1" class=""
+								>Berätta lite mer om katten:
+							</label>
+							<textarea
+								class=""
+								id="textarea1"
+								rows="3"
+								placeholder="Kanske något katten gjort som är roligt"
+							></textarea>
+						</div>
 
-					<div class="mb-3 form-check">
-						<input
-							class="form-check-input"
-							type="checkbox"
-							value=""
-							id="flexCheckDefault"
-						/>
-						<label class="form-check-label" for="flexCheckDefault">
-							Kastrerad
-						</label>
-					</div>
+						<div class="">
+							<input class="" type="checkbox" value="" id="flexCheckDefault" />
+							<label class="" for="flexCheckDefault"> Kastrerad </label>
+						</div>
 
-					<button type="button" class="btn btn-dark">Lägg till</button>
-				</form>
+						<button class="button is-primary">Lägg till</button>
+					</form>
+				</div>
 			</section>
 		</main>
+
+		<footer class="has-background-dark has-text-centered has-text-light">
+			<div class=""></div>
+			<p class="block">Copyright 2022 Fredrik Sandström</p>
+			<p class="block">
+				Denna sida är del av en uppgift för programmet
+				<a href="https://webbutveckling.miun.se/" target="_blank"
+					>Webbutveckling</a
+				>
+				på Mittuniversitetet
+			</p>
+		</footer>
 	</body>
 </html>
