@@ -7,12 +7,11 @@
 		<title>DT193G M1 - Bulma</title>
 
 		<link rel="stylesheet" href="./css/bulma.min.css" />
-		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
-	<body>
+	<body class="has-navbar-fixed-top">
 		<header>
 			<nav
-				class="navbar has-background-dark has-text-light"
+				class="navbar is-dark is-fixed-top"
 				role="navigation"
 				aria-label="main navigation"
 			>
@@ -80,7 +79,7 @@
 			</section>
 
 			<section id="procon-section" class="text-bg-dark section">
-				<div class="container">
+				<div class="container px-5">
 					<h2 class="is-size-1">Bra och mindre bra</h2>
 					<p>
 						"Beskriv vad du tycker är bra med ramverket, och om det finns några
@@ -90,7 +89,7 @@
 			</section>
 
 			<section id="table-section" class="section">
-				<div class="container">
+				<div class="container px-5">
 					<h2 class="is-size-1">Tabell</h2>
 					<p>"Tabell med minst fyra fält, och minst fem rader med data."</p>
 					<table class="table">
@@ -124,7 +123,7 @@
 			</section>
 
 			<section id="form-section" class="has-background-info section">
-				<div class="container">
+				<div class="container px-5">
 					<h2 class="is-size-1">Kattformulär</h2>
 					<p>Här kan du lägga till en katt i listan</p>
 					<form class="">
@@ -180,8 +179,7 @@
 			</section>
 		</main>
 
-		<footer class="has-background-dark has-text-centered has-text-light">
-			<div class=""></div>
+		<footer class="has-background-dark has-text-centered has-text-light py-6">
 			<p class="block">Copyright 2022 Fredrik Sandström</p>
 			<p class="block">
 				Denna sida är del av en uppgift för programmet
@@ -191,5 +189,7 @@
 				på Mittuniversitetet
 			</p>
 		</footer>
+
+		<script src="./js/bulma.js"></script>
 	</body>
 </html>
