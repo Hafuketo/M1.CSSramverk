@@ -166,108 +166,107 @@
 					Öppna formulär
 				</button>
 			</section>
+		</main>
+		<footer class="p-5 text-bg-dark text-center">
+			<div class="container"></div>
+			<p class="lead">Copyright 2022 Fredrik Sandström</p>
+			<p class="lead">
+				Denna sida är del av en uppgift för programmet
+				<a href="https://webbutveckling.miun.se/" target="_blank"
+					>Webbutveckling</a
+				>
+				på Mittuniversitetet
+			</p>
 
-			<footer class="p-5 text-bg-dark text-center">
-				<div class="container"></div>
-				<p class="lead">Copyright 2022 Fredrik Sandström</p>
-				<p class="lead">
-					Denna sida är del av en uppgift för programmet
-					<a href="https://webbutveckling.miun.se/" target="_blank"
-						>Webbutveckling</a
-					>
-					på Mittuniversitetet
-				</p>
+			<img src="" alt="" />
+		</footer>
 
-				<img src="" alt="" />
-			</footer>
+		<div class="modal" tabindex="-1" id="modalform">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Kattformulär</h5>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Stäng formulär"
+						></button>
+					</div>
+					<div class="modal-body">
+						<p>Här kan du lägga till en katt i listan</p>
+						<form>
+							<div class="mb-3">
+								<label for="formGroupExampleInput" class="form-label"
+									>Namn:
+								</label>
+								<input
+									type="text"
+									class="form-control"
+									id="formGroupExampleInput"
+									placeholder="Kattens namn"
+									aria-describedby="emailHelp"
+								/>
+							</div>
 
-			<div class="modal" tabindex="-1" id="modalform">
-				<div class="modal-dialog">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h5 class="modal-title">Kattformulär</h5>
-							<button
-								type="button"
-								class="btn-close"
-								data-bs-dismiss="modal"
-								aria-label="Stäng formulär"
-							></button>
-						</div>
-						<div class="modal-body">
-							<p>Här kan du lägga till en katt i listan</p>
-							<form>
-								<div class="mb-3">
-									<label for="formGroupExampleInput" class="form-label"
-										>Namn:
-									</label>
-									<input
-										type="text"
-										class="form-control"
-										id="formGroupExampleInput"
-										placeholder="Kattens namn"
-										aria-describedby="emailHelp"
-									/>
-								</div>
+							<div class="mb-3">
+								<label for="selecttest" class="form-label">Favoritmat</label>
+								<select
+									class="form-select"
+									aria-label="Default select example"
+									id="selecttest"
+								>
+									<option selected>Välj kattens favoritmat</option>
+									<option value="1">Fisk</option>
+									<option value="2">Levande byte</option>
+									<option value="3">Torrfoder</option>
+									<option value="4">Ost</option>
+									<option value="5">Korv</option>
+									<option value="6">Flugor</option>
+									<option value="7">Annat</option>
+								</select>
+							</div>
 
-								<div class="mb-3">
-									<label for="selecttest" class="form-label">Favoritmat</label>
-									<select
-										class="form-select"
-										aria-label="Default select example"
-										id="selecttest"
-									>
-										<option selected>Välj kattens favoritmat</option>
-										<option value="1">Fisk</option>
-										<option value="2">Levande byte</option>
-										<option value="3">Torrfoder</option>
-										<option value="4">Ost</option>
-										<option value="5">Korv</option>
-										<option value="6">Flugor</option>
-										<option value="7">Annat</option>
-									</select>
-								</div>
+							<div class="mb-3">
+								<label for="textarea1" class="form-label"
+									>Berätta lite mer om katten:
+								</label>
+								<textarea
+									class="form-control"
+									id="textarea1"
+									rows="3"
+									placeholder="Kanske något katten gjort som är roligt"
+								></textarea>
+							</div>
 
-								<div class="mb-3">
-									<label for="textarea1" class="form-label"
-										>Berätta lite mer om katten:
-									</label>
-									<textarea
-										class="form-control"
-										id="textarea1"
-										rows="3"
-										placeholder="Kanske något katten gjort som är roligt"
-									></textarea>
-								</div>
-
-								<div class="mb-3 form-check">
-									<input
-										class="form-check-input"
-										type="checkbox"
-										value=""
-										id="flexCheckDefault"
-									/>
-									<label class="form-check-label" for="flexCheckDefault">
-										Kastrerad
-									</label>
-								</div>
-							</form>
-						</div>
-						<div class="modal-footer">
-							<button
-								type="button"
-								class="btn btn-secondary"
-								data-bs-dismiss="modal"
-							>
-								avbryt
-							</button>
-							<button type="button" class="btn btn-primary">
-								Lägg till katt
-							</button>
-						</div>
+							<div class="mb-3 form-check">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									value=""
+									id="flexCheckDefault"
+								/>
+								<label class="form-check-label" for="flexCheckDefault">
+									Kastrerad
+								</label>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-secondary"
+							data-bs-dismiss="modal"
+						>
+							avbryt
+						</button>
+						<button type="button" class="btn btn-primary">
+							Lägg till katt
+						</button>
 					</div>
 				</div>
 			</div>
-		</main>
+		</div>
 
 		<script src="./js/bootstrap.min.js"></script>
 	</body>
