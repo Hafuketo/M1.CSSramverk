@@ -34,8 +34,6 @@
 					<div class="navbar-end">
 						<a class="navbar-item" href="./index.html">Hem</a>
 
-						<a class="navbar-item" href="./publicering.html"> Publicering </a>
-
 						<div class="navbar-item has-dropdown is-hoverable">
 							<a class="navbar-link"> Ramverk </a>
 
@@ -45,6 +43,8 @@
 								<hr class="navbar-divider" />
 							</div>
 						</div>
+
+						<a class="navbar-item" href="./publicering.html"> Publicering </a>
 					</div>
 				</div>
 			</nav>
@@ -52,15 +52,15 @@
 
 		<main class="">
 			<h1
-				class="is-size-1 has-text-weight-bold has-text-centered has-background-warning py-6"
+				class="is-size-1 is-uppercase has-text-weight-bold has-text-centered has-background-warning py-6"
 			>
 				Ramverk 1: Bootstrap
 			</h1>
 
 			<section id="info-section" class="section">
-				<div class="container px-5">
-					<h2 class="is-size-2">Information</h2>
-					<p>
+				<div class="container px-6">
+					<h2 class="is-size-2 pb-2">Information</h2>
+					<p class="py-1">
 						Bulma är ett gratis ramverk med öppen källkod som ger färdiga
 						frontend-komponenter som du enkelt kan kombinera för att bygga
 						responsiva webbgränssnitt.
@@ -71,63 +71,159 @@
 				</div>
 			</section>
 
-			<section id="procon-section" class="text-bg-dark section">
-				<div class="container px-5">
-					<h2 class="is-size-2">Bra och mindre bra</h2>
-					<p>
+			<section
+				id="procon-section"
+				class="has-background-dark has-text-white section"
+			>
+				<div class="container px-6">
+					<h2 class="is-size-2 pb-2">Bra och mindre bra</h2>
+					<p class="py-1">
 						"Beskriv vad du tycker är bra med ramverket, och om det finns några
 						saker du tycker är mindre bra. "
 					</p>
 
-					<h3 class="is-size-4">Bra</h3>
-					<p>Känns i allmänhet mer logiskt än Bootstrap</p>
+					<h3 class="is-size-4 py-2">Bra</h3>
+					<p class="py-1">Känns i allmänhet mer logiskt än Bootstrap</p>
+					<p class="py-1">
+						Menyn var lättare att skapa + man behövde ingen egen CSS-kod för att
+						få en sticky header som inte blockerar någonting
+					</p>
 
-					<h3 class="is-size-4">Dåligt</h3>
-					<p>Måste använd px-3 py-3 istället för p-3</p>
-					<p>Upplever att det är svårare att hitta saker i documentationen</p>
-					<p>Table-färger var krångligare än Bootstrap</p>
+					<h3 class="is-size-4 py-2">Dåligt</h3>
+					<p class="py-1">Måste använd px-3 py-3 istället för p-3</p>
+					<p class="py-1">
+						Upplever att det är svårare att hitta saker i documentationen
+					</p>
+					<p class="py-1">Table-färger var krångligare än Bootstrap</p>
+					<p class="py-1">Man måste skriva javascript själv</p>
+
+					<p class="py-1">
+						Bra och dåligt att allt resettas (marginaler, padding, textstorlek
+						med mera)
+					</p>
 				</div>
 			</section>
 
 			<section id="table-section" class="section">
-				<div class="container px-5">
-					<h2 class="is-size-2">Tabell</h2>
-					<p>"Tabell med minst fyra fält, och minst fem rader med data."</p>
+				<div class="container px-6">
+					<h2 class="is-size-2 pb-2">Tabell</h2>
+					<p class="pb-5">
+						Här listas katter med lite rolig information om dem.
+					</p>
 					<table class="table is-bordered is-fullwidth">
 						<thead class="table-info has-background-dark">
 							<tr>
 								<th class="has-text-light">#</th>
-								<th class="has-text-light">Input</th>
-								<th class="has-text-light">Textarea</th>
-								<th class="has-text-light">Checkbox</th>
-								<th class="has-text-light">Select</th>
+								<th class="has-text-light">Namn</th>
+								<th class="has-text-light">Favoritmat</th>
+								<th class="has-text-light">Info</th>
+								<th class="has-text-light">Kastrerad</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
 								<th scope="row">1</th>
-								<td>Mark</td>
-								<td>Otto</td>
-								<td>Otto</td>
-								<td>Otto</td>
+								<td>Morris</td>
+								<td>Torrfoder</td>
+								<td>
+									Hoppar alltid upp på biltaket när man stannar vid brevlådan en
+									bit från huset
+								</td>
+								<td>Ja</td>
 							</tr>
 							<tr>
 								<th scope="row">2</th>
-								<td>Jacob</td>
-								<td>Thornton</td>
-								<td>Otto</td>
-								<td>Otto</td>
+								<td>Oscar</td>
+								<td>Ost</td>
+								<td>Har fått namnet från Kattpojken i pyjamashjältarna</td>
+								<td>Nej</td>
+							</tr>
+							<tr>
+								<th scope="row">3</th>
+								<td>Boromir</td>
+								<td>Annat</td>
+								<td>
+									Springer alltid in i sovrummet och ockuperar sängen så fort
+									han får chansen
+								</td>
+								<td>Ja</td>
+							</tr>
+							<tr>
+								<th scope="row">4</th>
+								<td>Bob</td>
+								<td>Levande byte</td>
+								<td>
+									Brukar hoppa upp och klösa på rutan när han vill in istället
+									för att jama vid dörren
+								</td>
+								<td>Ja</td>
+							</tr>
+							<tr>
+								<th scope="row">5</th>
+								<td>Monstret</td>
+								<td>Fisk</td>
+								<td>
+									Hade ursprungligen namnet "Garden of Truth" eller något i den
+									stilen som ingen kunde komma ihåg eller uttala. Men hon såg ut
+									som ett monster så alla kallar henne "Monstret" eller
+									"Monsterkatten"
+								</td>
+								<td>Nej</td>
+							</tr>
+							<tr>
+								<th scope="row">6</th>
+								<td>Bulten</td>
+								<td>Korv</td>
+								<td>Är så stor och tjock att rävarna har ingen chans.</td>
+								<td>Ja</td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
 			</section>
 
-			<section id="form-section" class="has-background-info section">
+			<section
+				id="form-section"
+				class="section has-background-info has-text-centered"
+			>
 				<div class="container px-5 has-text-black">
-					<h2 class="is-size-1">Kattformulär</h2>
-					<p>Här kan du lägga till en katt i listan</p>
+					<h2 class="is-size-2 pb-2">Lägg till katt</h2>
+					<p class="pb-5">
+						Nu tillåter vi även dig att lägga till en egen katt i listan.
+						<br />
+						Tryck på knappen nedan för att öppna formuläret.
+					</p>
+					<button id="addcat-btn" class="button is-primary">
+						Öppna formulär
+					</button>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer has-background-dark">
+			<div class="content has-text-centered has-text-light">
+				<p class="">Copyright 2022 Fredrik Sandström</p>
+				<p class="">
+					Denna sida är del av en uppgift för programmet
+					<a href="https://webbutveckling.miun.se/" target="_blank"
+						>Webbutveckling</a
+					>
+					på Mittuniversitetet
+				</p>
+			</div>
+		</footer>
+
+		<!-- Modal, opens with button inside form-section -->
+		<div class="modal">
+			<div class="modal-background"></div>
+			<div class="modal-content has-background-white">
+				<header class="modal-card-head">
+					<p class="modal-card-title">Kattformulär</p>
+					<button id="x-cat" class="delete" aria-label="close"></button>
+				</header>
+				<section class="modal-card-body">
 					<form class="">
+						<p class="subtitle">Här kan du lägga till en katt i listan</p>
 						<div class="field">
 							<label for="formGroupExampleInput" class="label">Namn: </label>
 							<div class="control">
@@ -143,7 +239,7 @@
 
 						<div class="field">
 							<label for="selecttest" class="label">Favoritmat</label>
-							<div class="select">
+							<div class="select is-fullwidth">
 								<div class="control">
 									<select aria-label="Välj kattens favoritmat" id="selecttest">
 										<option selected>Välj kattens favoritmat</option>
@@ -181,23 +277,14 @@
 								</label>
 							</div>
 						</div>
-
-						<button class="button is-primary">Lägg till</button>
 					</form>
-				</div>
-			</section>
-		</main>
-
-		<footer class="has-background-dark has-text-centered has-text-light py-6">
-			<p class="block">Copyright 2022 Fredrik Sandström</p>
-			<p class="block">
-				Denna sida är del av en uppgift för programmet
-				<a href="https://webbutveckling.miun.se/" target="_blank"
-					>Webbutveckling</a
-				>
-				på Mittuniversitetet
-			</p>
-		</footer>
+				</section>
+				<footer class="modal-card-foot">
+					<button class="button is-primary">Lägg till</button>
+					<button id="cancel-cat" class="button is-secondary">Avbryt</button>
+				</footer>
+			</div>
+		</div>
 
 		<script src="./js/bulma.js"></script>
 	</body>
