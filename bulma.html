@@ -52,27 +52,20 @@
 
 		<main class="">
 			<h1
-				class="is-size-1 has-text-weight-bold has-text-centered has-background-warning"
+				class="is-size-1 has-text-weight-bold has-text-centered has-background-warning py-6"
 			>
 				Ramverk 1: Bootstrap
 			</h1>
 
 			<section id="info-section" class="section">
-				<div class="container">
+				<div class="container px-5">
 					<h2 class="is-size-2">Information</h2>
 					<p>
-						Bootstrap är ett gratis CSS-ramverk skrivet i öppen källkod. Det
-						försöker vara responsivt, mobil-first och riktar sig till
-						frontend-utvekling. Den innehåller HTML, CSS och (valfritt)
-						JavaScript-baserade designmallar för typografi, formulär, knappar,
-						navigering och andra gränssnittskomponenter. <br /><br />
-						Från och med juli 2022 är Bootstrap det åttonde mest stjärnmärkta
-						projektet på GitHub, med över 158 000 stjärnor.
+						Bulma är ett gratis ramverk med öppen källkod som ger färdiga
+						frontend-komponenter som du enkelt kan kombinera för att bygga
+						responsiva webbgränssnitt.
 					</p>
-					<a
-						class="is-text-underlined"
-						href="https://getbootstrap.com/"
-						target="_blank"
+					<a class="is-text-underlined" href="https://bulma.io/" target="_blank"
 						>Ramverkets webbplats</a
 					>
 				</div>
@@ -80,26 +73,34 @@
 
 			<section id="procon-section" class="text-bg-dark section">
 				<div class="container px-5">
-					<h2 class="is-size-1">Bra och mindre bra</h2>
+					<h2 class="is-size-2">Bra och mindre bra</h2>
 					<p>
 						"Beskriv vad du tycker är bra med ramverket, och om det finns några
 						saker du tycker är mindre bra. "
 					</p>
+
+					<h3 class="is-size-4">Bra</h3>
+					<p>Känns i allmänhet mer logiskt än Bootstrap</p>
+
+					<h3 class="is-size-4">Dåligt</h3>
+					<p>Måste använd px-3 py-3 istället för p-3</p>
+					<p>Upplever att det är svårare att hitta saker i documentationen</p>
+					<p>Table-färger var krångligare än Bootstrap</p>
 				</div>
 			</section>
 
 			<section id="table-section" class="section">
 				<div class="container px-5">
-					<h2 class="is-size-1">Tabell</h2>
+					<h2 class="is-size-2">Tabell</h2>
 					<p>"Tabell med minst fyra fält, och minst fem rader med data."</p>
-					<table class="table">
-						<thead class="table-info">
+					<table class="table is-bordered is-fullwidth">
+						<thead class="table-info has-background-dark">
 							<tr>
-								<th>#</th>
-								<th>Input</th>
-								<th>Textarea</th>
-								<th>Checkbox</th>
-								<th>Select</th>
+								<th class="has-text-light">#</th>
+								<th class="has-text-light">Input</th>
+								<th class="has-text-light">Textarea</th>
+								<th class="has-text-light">Checkbox</th>
+								<th class="has-text-light">Select</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -123,54 +124,62 @@
 			</section>
 
 			<section id="form-section" class="has-background-info section">
-				<div class="container px-5">
+				<div class="container px-5 has-text-black">
 					<h2 class="is-size-1">Kattformulär</h2>
 					<p>Här kan du lägga till en katt i listan</p>
 					<form class="">
-						<div class="">
-							<label for="formGroupExampleInput" class="">Namn: </label>
-							<input
-								type="text"
-								class=""
-								id="formGroupExampleInput"
-								placeholder="Kattens namn"
-								aria-describedby="emailHelp"
-							/>
+						<div class="field">
+							<label for="formGroupExampleInput" class="label">Namn: </label>
+							<div class="control">
+								<input
+									class="input"
+									type="text"
+									id="formGroupExampleInput"
+									placeholder="Kattens namn"
+									aria-describedby="emailHelp"
+								/>
+							</div>
 						</div>
 
-						<div class="">
-							<label for="selecttest" class="">Favoritmat</label>
-							<select
-								class=""
-								aria-label="Default select example"
-								id="selecttest"
-							>
-								<option selected>Välj kattens favoritmat</option>
-								<option value="1">Fisk</option>
-								<option value="2">Levande byte</option>
-								<option value="3">Torrfoder</option>
-								<option value="4">Ost</option>
-								<option value="5">Korv</option>
-								<option value="6">Flugor</option>
-								<option value="7">Annat</option>
-							</select>
+						<div class="field">
+							<label for="selecttest" class="label">Favoritmat</label>
+							<div class="select">
+								<div class="control">
+									<select aria-label="Välj kattens favoritmat" id="selecttest">
+										<option selected>Välj kattens favoritmat</option>
+										<option value="1">Fisk</option>
+										<option value="2">Levande byte</option>
+										<option value="3">Torrfoder</option>
+										<option value="4">Ost</option>
+										<option value="5">Korv</option>
+										<option value="6">Flugor</option>
+										<option value="7">Annat</option>
+									</select>
+								</div>
+							</div>
 						</div>
 
-						<div class="">
-							<label for="textarea1" class=""
-								>Berätta lite mer om katten:
-							</label>
-							<textarea
-								class=""
-								id="textarea1"
-								rows="3"
-								placeholder="Kanske något katten gjort som är roligt"
-							></textarea>
+						<div class="field">
+							<div class="control">
+								<label for="textarea1" class="label"
+									>Berätta lite mer om katten:
+								</label>
+								<textarea
+									class="textarea"
+									id="textarea1"
+									rows="3"
+									placeholder="Kanske något katten gjort som är roligt"
+								></textarea>
+							</div>
 						</div>
 
-						<div class="">
-							<input class="" type="checkbox" value="" id="flexCheckDefault" />
-							<label class="" for="flexCheckDefault"> Kastrerad </label>
+						<div class="field">
+							<div class="control">
+								<label class="" for="flexCheckDefault"
+									><input type="checkbox" id="flexCheckDefault" />
+									Kastrerad
+								</label>
+							</div>
 						</div>
 
 						<button class="button is-primary">Lägg till</button>
