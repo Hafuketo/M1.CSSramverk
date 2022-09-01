@@ -5,22 +5,56 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>DT193G M1 - Publicering</title>
+
+		<link rel="stylesheet" href="./css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
 		<header>
-			<p>DT193G M1 - CSS-ramverk</p>
-			<ul>
-				<li><a href="./index.html">Hem</a></li>
-				<li><a href="./bootstrap.html">Bootstrap</a></li>
-				<li><a href="./bulma.html">Bulma</a></li>
-				<li><a href="./publicering.html">Publicering</a></li>
-			</ul>
+			<nav
+				class="navbar navbar-expand-lg text-bg-dark navbar-dark py-3 fixed-top"
+			>
+				<div class="container">
+					<a href="./index.html" class="navbar-brand"
+						>DT193G M1 - CSS-ramverk</a
+					>
+
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navmenu"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="#navmenu">
+						<ul class="navbar-nav ms-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="./index.html">Hem</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./bootstrap.html">Bootstrap</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./bulma.html">Bulma</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./publicering.html">Publicering</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
 		</header>
 
 		<main>
-			<h1>Publicering</h1>
+			<h1></h1>
+			<h1 class="display-1 bg-warning text-light p-5 text-center">
+				Publicering
+			</h1>
 
-			<section id="pubintro-section">
+			<section id="pubintro-section" class="p-5">
 				<p>För att publicera dessa sidor användes följande teknik;</p>
 				<ul>
 					<li>Visual Studio Code</li>
@@ -29,7 +63,7 @@
 				</ul>
 			</section>
 
-			<section id="codesupport-section">
+			<section id="codesupport-section" class="p-5 text-bg-dark">
 				<h2>Kodstöd</h2>
 				<p>
 					VScode och GitHub stödjer kod för samtliga språk, är gratis och
@@ -37,12 +71,12 @@
 					Netlify stödjer till exempel inte PHP.
 				</p>
 			</section>
-			<section>
+			<section class="p-5">
 				<h2>Kostnad</h2>
 				<p>Gratisvarianter användes för samtliga tekniker.</p>
 			</section>
 
-			<section id="proncon-section">
+			<section id="proncon-section" class="text-bg-warning p-5">
 				<h2>Fördelar</h2>
 				<ul>
 					<li>
@@ -69,7 +103,7 @@
 				</ul>
 			</section>
 
-			<section id="pubhowto-section">
+			<section id="pubhowto-section" class="p-5">
 				<h2>Hur publiceringen gick till väga</h2>
 				<h3>Visual Studio Code</h3>
 				<p>
@@ -100,5 +134,18 @@
 				</p>
 			</section>
 		</main>
+		<footer class="p-5 text-bg-dark text-center">
+			<div class="container"></div>
+			<p class="lead">Copyright 2022 Fredrik Sandström</p>
+			<p class="lead">
+				Denna sida är del av en uppgift för programmet
+				<a href="https://webbutveckling.miun.se/" target="_blank"
+					>Webbutveckling</a
+				>
+				på Mittuniversitetet
+			</p>
+
+			<img src="" alt="" />
+		</footer>
 	</body>
 </html>

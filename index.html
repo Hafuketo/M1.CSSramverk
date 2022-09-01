@@ -5,21 +5,55 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>DT193G M1 - CSS-ramverk</title>
+
+		<link rel="stylesheet" href="./css/bootstrap.min.css" />
+		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
 		<header>
-			<p>DT193G M1 - CSS-ramverk</p>
-			<ul>
-				<li><a href="./index.html">Hem</a></li>
-				<li><a href="./bootstrap.html">Bootstrap</a></li>
-				<li><a href="./bulma.html">Bulma</a></li>
-				<li><a href="./publicering.html">Publicering</a></li>
-			</ul>
+			<nav
+				class="navbar navbar-expand-lg text-bg-dark navbar-dark py-3 fixed-top"
+			>
+				<div class="container">
+					<a href="./index.html" class="navbar-brand"
+						>DT193G M1 - CSS-ramverk</a
+					>
+
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navmenu"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="#navmenu">
+						<ul class="navbar-nav ms-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="./index.html">Hem</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./bootstrap.html">Bootstrap</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./bulma.html">Bulma</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="./publicering.html">Publicering</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
 		</header>
 
 		<main>
-			<h1>🐙DT193G Fullstack - Moment 1: CSS-ramverk</h1>
-			<section id="main-section">
+			<h1 class="display-1 bg-warning text-light p-5 text-center">
+				DT193G Fullstack - Moment 1: CSS-ramverk
+			</h1>
+
+			<section id="main-section" class="p-5">
 				<h2>Vad den här uppgiften går ut på</h2>
 				<p>
 					Den här uppgiften går ut på att utvärdera olika CSS-ramverk för
@@ -46,11 +80,38 @@
 				</p>
 			</section>
 
-			<h2>Valda CSS-ramverk</h2>
-			<h3>Bootstrap</h3>
-			<p>Om Bootstrap</p>
-			<h3>Bulma</h3>
-			<p>Om Bulma</p>
+			<section class="p-5 text-bg-info">
+				<h2>Valda CSS-ramverk</h2>
+				<h3>Bootstrap</h3>
+				<p>
+					Bootstrap är ett gratis CSS-ramverk skrivet i öppen källkod. Det
+					försöker vara responsivt, mobil-first och riktar sig till
+					frontend-utvekling. Den innehåller HTML, CSS och (valfritt)
+					JavaScript-baserade designmallar för typografi, formulär, knappar,
+					navigering och andra gränssnittskomponenter. <br /><br />
+					Från och med juli 2022 är Bootstrap det åttonde mest stjärnmärkta
+					projektet på GitHub, med över 158 000 stjärnor.
+				</p>
+				<h3>Bulma</h3>
+				<p>
+					Bulma är ett gratis ramverk med öppen källkod som ger färdiga
+					frontend-komponenter som du enkelt kan kombinera för att bygga
+					responsiva webbgränssnitt.
+				</p>
+			</section>
 		</main>
+		<footer class="p-5 text-bg-dark text-center">
+			<div class="container"></div>
+			<p class="lead">Copyright 2022 Fredrik Sandström</p>
+			<p class="lead">
+				Denna sida är del av en uppgift för programmet
+				<a href="https://webbutveckling.miun.se/" target="_blank"
+					>Webbutveckling</a
+				>
+				på Mittuniversitetet
+			</p>
+
+			<img src="" alt="" />
+		</footer>
 	</body>
 </html>
